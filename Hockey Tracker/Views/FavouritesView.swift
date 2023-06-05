@@ -39,7 +39,7 @@ struct FavouritesView: View {
                 }
                 .onDelete(perform: deletePlayer)
             }
-            .navigationTitle("Favourite Players")
+            .navigationTitle("Favourites")
         }
     }
     
