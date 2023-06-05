@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		212546EC2A292139002F1381 /* Hockey_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212546EB2A292139002F1381 /* Hockey_TrackerApp.swift */; };
-		212546EE2A292139002F1381 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212546ED2A292139002F1381 /* ContentView.swift */; };
 		212546F02A29213A002F1381 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212546EF2A29213A002F1381 /* Assets.xcassets */; };
 		212546F32A29213A002F1381 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212546F22A29213A002F1381 /* Preview Assets.xcassets */; };
+		212546FA2A292151002F1381 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212546F92A292151002F1381 /* PlayerView.swift */; };
+		21817B802A2E153000F15897 /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21817B7F2A2E153000F15897 /* FavouritesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		212546E82A292139002F1381 /* Hockey Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hockey Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		212546EB2A292139002F1381 /* Hockey_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hockey_TrackerApp.swift; sourceTree = "<group>"; };
-		212546ED2A292139002F1381 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		212546EF2A29213A002F1381 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		212546F22A29213A002F1381 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		212546F92A292151002F1381 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		21817B7F2A2E153000F15897 /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				212546EB2A292139002F1381 /* Hockey_TrackerApp.swift */,
-				212546ED2A292139002F1381 /* ContentView.swift */,
+				212546FD2A292815002F1381 /* Views */,
 				212546EF2A29213A002F1381 /* Assets.xcassets */,
 				212546F12A29213A002F1381 /* Preview Content */,
 			);
@@ -65,6 +67,15 @@
 				212546F22A29213A002F1381 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		212546FD2A292815002F1381 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				212546F92A292151002F1381 /* PlayerView.swift */,
+				21817B7F2A2E153000F15897 /* FavouritesView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				212546EE2A292139002F1381 /* ContentView.swift in Sources */,
 				212546EC2A292139002F1381 /* Hockey_TrackerApp.swift in Sources */,
+				21817B802A2E153000F15897 /* FavouritesView.swift in Sources */,
+				212546FA2A292151002F1381 /* PlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
