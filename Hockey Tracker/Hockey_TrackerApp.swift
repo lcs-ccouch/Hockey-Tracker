@@ -11,7 +11,24 @@ import SwiftUI
 struct Hockey_TrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            PlayerView()
+            NavigationView {
+                TabView {
+                    PlayerView()
+                        .tabItem {
+                            Text("playerprofile")
+                            Image(systemName: "person.fill")
+                        }
+                    
+                    FavouritesView()
+                        .tabItem {
+                            Text("Favourites")
+                            Image(systemName: "heart.fill")
+                        }
+                }
+                
+                
+            }
+            
         }
     }
 }
