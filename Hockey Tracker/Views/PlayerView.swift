@@ -11,69 +11,69 @@ import SwiftUI
 struct PlayerView: View {
     
     var body: some View {
-       
+        
+        
+        
+        
+        
+        
+        
+        ScrollView {
             
-            
-            
-            
-            
-            
-            ScrollView {
+            VStack {
+                VStack {
+                    Text("displayName")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    
+                    
+                }
                 
                 VStack {
-                    VStack {
-                        Text("displayName")
-                            .font(.title)
-                            .fontWeight(.bold)
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 100)
+                            .fill(Color.gray)
+                            .frame(width: 299, height: 280)
                         
-                       
-                    }
-                    
-                    VStack {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 100)
-                                .fill(Color.gray)
-                                .frame(width: 299, height: 280)
+                        
+                        
+                        HStack {
                             
-                            
-                            
-                            HStack {
+                            VStack {
+                                Text("goals")
+                                    .bold(true)
+                                Text("amount")
+                            }
+                            VStack {
+                                Text("Assists")
+                                    .bold(true)
+                                Text("amount")
                                 
-                                VStack {
-                                    Text("goals")
-                                        .bold(true)
-                                    Text("amount")
-                                }
-                                VStack {
-                                    Text("Assists")
-                                        .bold(true)
-                                    Text("amount")
-                                    
-                                }
-                                VStack {
-                                    Text("Games")
-                                        .bold(true)
-                                    Text("amount")
-                                    
-                                }
+                            }
+                            VStack {
+                                Text("Games")
+                                    .bold(true)
+                                Text("amount")
                                 
                             }
                             
-                            
-                            
-                            
-                          
-                            
                         }
-                      
+                        
+                        
+                        
+                        
+                        
+                        
                     }
                     
                 }
+                
             }
-            .navigationTitle("playerprofile")
         }
-        
+        .navigationTitle("playerprofile")
     }
+    
+}
 
 
 struct PlayerView_Previews: PreviewProvider {
