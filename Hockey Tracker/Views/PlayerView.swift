@@ -10,58 +10,58 @@ import SwiftUI
 
 struct PlayerView: View {
     var body: some View {
-        VStack {
+        ScrollView {
             VStack {
-                Text("displayName")
-                    .font(.title)
-                    .fontWeight(.bold)
-                
-                Spacer()
-            }
-            
-            VStack {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 100)
-                        .fill(Color.gray)
-                        .frame(width: 299, height: 280)
-                    
-                    
-                    HStack {
-                        
-                        VStack {
-                            Text("goals")
-                                .bold(true)
-                            Text("amount")
-                        }
-                        VStack {
-                            Text("Assists")
-                                .bold(true)
-                            Text("amount")
-                            
-                        }
-                        VStack {
-                            Text("Games")
-                                .bold(true)
-                            Text("amount")
-                            
-                        }
-                        
-                    }
-                    
-                    
-                    
-                    
-                    
-                    
+                VStack {
+                    Text("displayName")
+                        .font(.title)
+                        .fontWeight(.bold)
                     
                     Spacer()
-                    
+                }
+                
+                VStack {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 100)
+                            .fill(Color.gray)
+                            .frame(width: 299, height: 280)
+                        
+                        
+                        
+                        HStack {
+                            
+                            VStack {
+                                Text("goals")
+                                    .bold(true)
+                                Text("amount")
+                            }
+                            VStack {
+                                Text("Assists")
+                                    .bold(true)
+                                Text("amount")
+                                
+                            }
+                            VStack {
+                                Text("Games")
+                                    .bold(true)
+                                Text("amount")
+                                
+                            }
+                            
+                        }
+                        
+                        
+                        
+                        
+                        Spacer()
+                        
+                    }
+                    Spacer(minLength: 400)
                 }
             }
         }
     }
-        }
-            
+}
     
       
 
