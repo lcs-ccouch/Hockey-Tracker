@@ -22,7 +22,7 @@ struct PlayerView: View {
             
             VStack {
                 VStack {
-                    Text("displayName")
+                    Text("PlayerProfile")
                         .font(.title)
                         .fontWeight(.bold)
                     
@@ -34,43 +34,51 @@ struct PlayerView: View {
                         RoundedRectangle(cornerRadius: 100)
                             .fill(Color.gray)
                             .frame(width: 299, height: 280)
-                        
-                        
-                        
-                        HStack {
+                        VStack {
+                            Text("McDavid")
+                                .font(.title)
+                                .fontWeight(.bold)
                             
-                            VStack {
-                                Text("goals")
-                                    .bold(true)
-                                Text("amount")
-                            }
-                            VStack {
-                                Text("Assists")
-                                    .bold(true)
-                                Text("amount")
+                        
+                            
+                            HStack {
+                                
+                                VStack {
+                                    Text("Goals")
+                                        .bold(true)
+                                    Text("amount")
+                                }
+                                VStack {
+                                    Text("Assists")
+                                        .bold(true)
+                                    Text("amount")
+                                    
+                                }
+                                VStack {
+                                    Text("Games")
+                                        .bold(true)
+                                    Text("amount")
+                                    
+                                    
+                                }
                                 
                             }
-                            VStack {
-                                Text("Games")
-                                    .bold(true)
-                                Text("amount")
-                                
-                            }
-                            
                         }
                         
                         
                         
                         
                         
-                        
                     }
-                    
+                  
+                
+                    .navigationTitle("playerprofile")
                 }
                 
             }
+            
         }
-        .navigationTitle("playerprofile")
+       
     }
     
 }
@@ -79,5 +87,6 @@ struct PlayerView: View {
 struct PlayerView_Previews: PreviewProvider {
     static var previews: some View {
         PlayerView()
+            .preferredColorScheme(.dark)
     }
 }

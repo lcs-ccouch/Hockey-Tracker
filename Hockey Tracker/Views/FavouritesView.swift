@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct player: Identifiable {
-    let id = UUID()
-    let displayName: String
-    let goals: Int
-    let assists: Int
-    let games: Int
+    var id = UUID()
+    var displayName: String
+    var goals: Int
+    var assists: Int
+    var games: Int
 }
 struct FavouritesView: View {
     @State private var players = [
