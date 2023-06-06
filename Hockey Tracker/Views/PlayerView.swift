@@ -37,7 +37,7 @@ struct PlayerView: View {
                                 .fill(Color.gray)
                                 .frame(width: 299, height: 280)
                             VStack {
-                                Text("\(currentPlayer.displayName)")
+                                Text("displayName")
                                     .font(.title)
                                     .fontWeight(.bold)
                                 
@@ -48,18 +48,18 @@ struct PlayerView: View {
                                     VStack {
                                         Text("Goals")
                                             .bold(true)
-                                        Text(currentPlayer.goals)
+                                        Text("goals")
                                     }
                                     VStack {
                                         Text("Assists")
                                             .bold(true)
-                                        Text(currentPlayer.assists)
+                                        Text("assists")
                                         
                                     }
                                     VStack {
                                         Text("Games")
                                             .bold(true)
-                                        Text(currentPlayer.games)
+                                        Text("games")
                                         
                                         
                                     }
