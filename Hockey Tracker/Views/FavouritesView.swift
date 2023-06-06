@@ -7,13 +7,8 @@
 
 import SwiftUI
 
-struct player: Identifiable {
-    var id = UUID()
-    var displayName: String
-    var goals: Int
-    var assists: Int
-    var games: Int
-}
+
+
 struct FavouritesView: View {
     @State private var players = [
         player(displayName: "Victor Hedman", goals: 31, assists: 14, games: 28),
@@ -51,6 +46,7 @@ struct FavouritesView: View {
 struct FavouritePlayers_Previews: PreviewProvider {
     static var previews: some View {
         FavouritesView()
+            .preferredColorScheme(.dark)
     }
 }
 

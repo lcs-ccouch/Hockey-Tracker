@@ -12,6 +12,7 @@
 		212546F32A29213A002F1381 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212546F22A29213A002F1381 /* Preview Assets.xcassets */; };
 		212546FA2A292151002F1381 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212546F92A292151002F1381 /* PlayerView.swift */; };
 		21817B802A2E153000F15897 /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21817B7F2A2E153000F15897 /* FavouritesView.swift */; };
+		21E26D282A2F8A21009FC2D9 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 21E26D272A2F8A21009FC2D9 /* db.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		212546F22A29213A002F1381 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		212546F92A292151002F1381 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		21817B7F2A2E153000F15897 /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
+		21E26D272A2F8A21009FC2D9 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		212546EA2A292139002F1381 /* Hockey Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				21E26D262A2F8971009FC2D9 /* Model */,
 				212546EB2A292139002F1381 /* Hockey_TrackerApp.swift */,
 				212546FD2A292815002F1381 /* Views */,
 				212546EF2A29213A002F1381 /* Assets.xcassets */,
@@ -76,6 +79,14 @@
 				21817B7F2A2E153000F15897 /* FavouritesView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		21E26D262A2F8971009FC2D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21E26D272A2F8A21009FC2D9 /* db.sqlite */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				212546F32A29213A002F1381 /* Preview Assets.xcassets in Resources */,
+				21E26D282A2F8A21009FC2D9 /* db.sqlite in Resources */,
 				212546F02A29213A002F1381 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

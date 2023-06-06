@@ -7,6 +7,14 @@
 
 import SwiftUI
 
+struct player: Identifiable {
+    @State var id = UUID()
+    @State var displayName: String
+    @State var goals: Int
+    @State   var assists: Int
+    @State var games: Int
+  
+}
 
 struct PlayerView: View {
     
@@ -14,71 +22,71 @@ struct PlayerView: View {
         
         
         
-        
-        
-        
-        
-        ScrollView {
+        NavigationView {
             
-            VStack {
-                VStack {
-                    Text("PlayerProfile")
-                        .font(.title)
-                        .fontWeight(.bold)
-                    
-                    
-                }
+            
+            
+            ScrollView {
                 
                 VStack {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 100)
-                            .fill(Color.gray)
-                            .frame(width: 299, height: 280)
-                        VStack {
-                            Text("McDavid")
-                                .font(.title)
-                                .fontWeight(.bold)
-                            
-                        
-                            
-                            HStack {
+                    
+                    
+                    VStack {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 100)
+                                .fill(Color.gray)
+                                .frame(width: 299, height: 280)
+                            VStack {
+                                Text("\(currentPlayer.displayName)")
+                                    .font(.title)
+                                    .fontWeight(.bold)
                                 
-                                VStack {
-                                    Text("Goals")
-                                        .bold(true)
-                                    Text("amount")
-                                }
-                                VStack {
-                                    Text("Assists")
-                                        .bold(true)
-                                    Text("amount")
-                                    
-                                }
-                                VStack {
-                                    Text("Games")
-                                        .bold(true)
-                                    Text("amount")
-                                    
-                                    
-                                }
                                 
+                                
+                                HStack {
+                                    
+                                    VStack {
+                                        Text("Goals")
+                                            .bold(true)
+                                        Text(currentPlayer.goals)
+                                    }
+                                    VStack {
+                                        Text("Assists")
+                                            .bold(true)
+                                        Text(currentPlayer.assists)
+                                        
+                                    }
+                                    VStack {
+                                        Text("Games")
+                                            .bold(true)
+                                        Text(currentPlayer.games)
+                                        
+                                        
+                                    }
+                                    
+                                }
                             }
+                            
+                            
+                            
+                            
+                            
                         }
                         
                         
                         
                         
+                        .navigationTitle("Player Profile")
+                        
+                        
+                        
                         
                     }
-                  
-                
-                    .navigationTitle("playerprofile")
                 }
-                
             }
             
         }
-       
+        
     }
     
 }
